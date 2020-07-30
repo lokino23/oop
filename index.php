@@ -1,22 +1,19 @@
-<html>
+<?php
+require "animal.php";
+require "frog.php";
+require "ape.php";
 
-<head>
-    <link href="style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-</head>
+$sheep = new Animal("shaun");
 
-<body>
-    <header>
-        
-        
-        <h1>Ini adalah Test Website</h1>
-    
-    </header>   
+echo $sheep->name; // "shaun"
+echo $sheep->legs; // 2
+echo $sheep->cold_blooded // false
 
-    
-    <footer>
-        <h5>copyright &copy; 2019 by Sanbercode</h5>
-    </footer>
-</body>
+// NB: Boleh juga menggunakan method get (get_name(), get_legs(), get_cold_blooded())
 
-</html>
+// index.php
+$sungokong = new Ape("kera sakti");
+$sungokong->yell(); // "Auooo"
+
+$kodok = new Frog("buduk");
+$kodok->jump() ; // "hop hop"
