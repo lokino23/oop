@@ -20,3 +20,4 @@ $sungokong->yell(); // "Auooo"
 //tentang frog.php
 $kodok = new Frog("buduk");
 $kodok->jump() ; // "hop hop"
+
