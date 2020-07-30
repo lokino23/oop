@@ -1,7 +1,7 @@
 <?php
 class Ape extends Animal
 {
-    public $suara = "Auooo"
+    public $suara = "Auooo" ;
 
     function __construct($name)
     {
@@ -9,6 +9,6 @@ class Ape extends Animal
     }
     function yell() 
     {
-        echo$this->sounds;
+        echo$this->suara;
     }
 }
