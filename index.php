@@ -16,7 +16,7 @@ echo $sheep->cold_blooded; // false
 // ape.php
 $sungokong = new Ape("kera sakti");
 $sungokong->yell(); // "Auooo"
-
+echo "<br>";
 //tentang frog.php
 $kodok = new Frog("buduk");
 $kodok->jump() ; // "hop hop"

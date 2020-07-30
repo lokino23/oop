@@ -6,7 +6,7 @@
         {
             $this->name = $name ;
         }
-        function yell() 
+        function jump() 
         {
             echo $this->jump ;
 
