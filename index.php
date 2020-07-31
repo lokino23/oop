@@ -1,23 +1,28 @@
 <?php
 require "animal.php";
-require "frog.php";
-require "ape.php";
+require "Ape.php";
+require "Frog.php";
 
 $sheep = new Animal("shaun");
-
-echo $sheep->name; // "shaun"
+echo $sheep->getName(); // "shaun"
 echo "<br>";
-echo $sheep->legs; // 2
-echo "<br>" ;
+echo $sheep->getLegs(); // 2
 echo $sheep->cold_blooded; // false
-
-// NB: Boleh juga menggunakan method get (get_name(), get_legs(), get_cold_blooded())
-
-// ape.php
-$sungokong = new Ape("kera sakti");
-$sungokong->yell(); // "Auooo"
 echo "<br>";
-//tentang frog.php
-$kodok = new Frog("buduk");
-$kodok->jump() ; // "hop hop"
+var_dump($sheep);
 
+// NB: Boleh juga menggunakan method get (get_name(), get_legs(), get_cold_blooded()
+
+//APE
+$sungokong = new Ape("kera sakti");
+echo "Suara sungokong yaitu " . $sungokong->yell(); // "Auooo"
+echo "<br>";
+var_dump($sungokong);
+
+//FROG
+$kodok = new Frog("buduk");
+echo "Kodok Memiliki " . $kodok->getLeg() . " kaki";
+echo "<br>";
+echo "Lompat kodok adalah " . $kodok->jump(); // "hop hop"
+
+var_dump($kodok);
